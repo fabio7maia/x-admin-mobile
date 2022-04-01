@@ -19,6 +19,8 @@ target 'XAdmin' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
+  pod 'RNPermissions', :path => '../node_modules/react-native-permissions'
+
   target 'XAdminTests' do
     inherit! :complete
     # Pods for testing
